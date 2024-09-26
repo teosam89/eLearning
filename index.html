@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odemy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="upper">
+        <div class="logo">
+            <span>Odemy</span>          
+        </div>
+        <div class="function">
+            <ul class="upper-function">
+                <li class="upper-function-active"><a href="#">Home</a></li>
+                <li><a href="#course">Browse Course</a></li>
+                <li><a href="#" onclick="openView()">Shopping Cart</a></li>
+                <li><a href="faq.php">FAQS</a></li>
+            </ul>
+        </div>
+        <div class="account">
+            <a data-login="Login" href="login-login.html"><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#000000"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg></a>
+        </div>
+    </div>
+    <div class="title" id="home">
+        <div class="title-inside">
+            <div class="title-main">
+                <h2>Discover. Learn. Enjoy</h2>
+            </div>
+            <div class="title-sub">
+                <h4>Global hub for online learning</h4>
+            </div>
+            <div class="title-search">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                <input type="text" placeholder="Search...">
+            </div>
+        </div>
+    </div>
+    <div class="intro">
+        <div class="intro-course">
+            <h2>Website purpose</h2>
+            <p>Welcome to our online learning platform! Explore our wide range of courses and start your learning journey today!</p>
+            <img src=https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_200,h_20/http://www.igakubujyuken.gashi-blog.com/wp-content/uploads/2021/11/124567cf24179cc37b5bd8959f83cebf-300x218.jpg width="330px">
+        </div>
+        <div class="intro-overview">
+            <h2>Courses Overview</h2>
+            <p>Our website offers a comprehensive selection of courses tailored to meet your learning needs. Explore our diverse range of courses in Browse Course!</p>
+            <span><a href="#course">Learn more</a></span>
+            <div class="intro-overview-svg">
+            <p>Share:</p>
+            <span data-social="Twitter" style="--accent-color: black;"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></span>
+            <span data-social="Instagram" style="--accent-color: #fe107c;"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></span>
+            <span data-social="Facebook" style="--accent-color: #0866FF;"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></span>
+        </div>
+        </div>
+    </div>
+    <div class="browse-course">
+        <div class="browse-course-topic" id="course">
+            <h2>Browse Course</h2>
+        </div>
+        <div class="browse-course-category">
+            <ul>
+                <li class="courseActive"><a href="">Frontend Learning</a></li>
+                <li class=""><a href="">Backend Learning</a></li>
+                <li class=""><a href="">Big Data</a></li>
+                <li class=""><a href="">Gaming Develop</a></li>
+            </ul>
+        </div>
+        <div class="browse-course-details">
+            <div class="browse-course-container">
+                <h2>Completed HTML&CSS</h2>
+                <p>Learn HTML and CSS with our online course designed for beginners and those looking to enhance their web development skills. This course covers everything from the basics of building web pages with HTML to creating stunning designs with CSS. Through interactive lessons, practical examples, and hands-on projects, you'll gain the skills needed to develop modern, responsive websites. Perfect for anyone interested in web design or front-end development.</p>
+                <div class="browse-course-container-img">
+                <img src="https://media.licdn.com/dms/image/D4E12AQHfSWXTymm4VA/article-cover_image-shrink_600_2000/0/1695299723277?e=2147483647&v=beta&t=k0oOD_n5zjaGevp72SKt4vFaW7DvHtrwbdIyb2eP0GA" height="250px" width="450px">
+                <div class="details-love" onclick="addinglove(event)">
+                    <span>Add to favourite &nbsp;<label class="heart">&#10084;</label>
+            </div>
+                <span>Purchase</span>
+            </div>
+            </div>
+            <div class="browse-course-container">
+                <h2>Javascript</h2>
+                <p>Learn JavaScript, the essential programming language for web development, in our comprehensive online course. Starting from the basics, you'll explore key concepts like variables, functions, loops, and events, and progress to more advanced topics such as DOM manipulation, asynchronous programming, and APIs. With practical exercises and projects, this course will equip you with the skills needed to create interactive and dynamic web applications.</p>
+                <div class="browse-course-container-img">
+                <img src="https://cdn.sanity.io/images/3do82whm/next/a69e3ba2441d35dd1a7945e826064708f30c10a9-1000x667.jpg?w=720&h=480&fit=clip&auto=format" height="250px" width="450px">
+                <div class="details-love" onclick="addinglove(event)">
+                    <span>Add to favourite &nbsp;<label class="heart">&#10084;</label>
+            </div>
+                <span>Purchase</span>
+            </div>
+            </div>
+            <div class="browse-course-container">
+                <h2>React JS</h2>
+                <p>Master React JS with our online course, perfect for beginners and developers looking to enhance their skills in building dynamic web applications. Learn core concepts such as components, state, props, and hooks, and discover how to efficiently manage user interfaces. With hands-on projects and real-world examples, you'll gain the knowledge to create powerful, fast, and scalable web apps using React. Ideal for anyone looking to advance in front-end development.</p>
+                <div class="browse-course-container-img">
+                <img src="https://lerablog.org/wp-content/uploads/2018/02/ReactJS-Native-Development-Process.png" height="250px" width="450px">
+                <div class="details-love" onclick="addinglove(event)">
+                    <span>Add to favourite &nbsp;<label class="heart">&#10084;</label>
+            </div>
+                <span>Purchase</span>
+            </div>
+            </div>
+        </div>
+        <div class="browse-course-details" style="display: none;">
+            <div class="browse-course-container">
+                <h2>API</h2>
+                <p>Explore the world of APIs with our online course, designed to teach you how to integrate and interact with external data and services. Learn the fundamentals of RESTful APIs, HTTP methods, authentication, and data formats like JSON. Through hands-on projects, you'll gain practical experience in building, testing, and consuming APIs, empowering you to create powerful, connected applications. Ideal for developers and anyone looking to enhance their backend or full-stack development skills.</p>
+                <div class="browse-course-container-img">
+                <img src="https://chisellabs.com/glossary/wp-content/uploads/2021/06/What-is-an-API.png" height="250px" width="450px">
+                <div class="details-love" onclick="addinglove(event)">
+                    <span>Add to favourite &nbsp;<label class="heart">&#10084;</label>
+            </div>
+                <span>Purchase</span>
+            </div>
+            </div>
+            <div class="browse-course-container">
+                <h2>Node.Js</h2>
+                <p>Learn Node.js with our online course and dive into backend development using JavaScript. This course covers the fundamentals of Node.js, including setting up servers, working with databases, and building scalable web applications. You'll explore key topics such as asynchronous programming, Express.js, and APIs, while working on real-world projects. Ideal for developers who want to expand their skills into full-stack or backend development.</p>
+                <div class="browse-course-container-img">
+                <img src="https://delta-dev-software.fr/wp-content/uploads/2024/02/nodejs.jpg" height="250px" width="450px">
+                <div class="details-love" onclick="addinglove(event)">
+                    <span>Add to favourite &nbsp;<label class="heart">&#10084;</label>
+            </div>
+                <span>Purchase</span>
+            </div>
+            </div>
+            <div class="browse-course-container">
+                <h2>MongoDB</h2>
+                <p>Master MongoDB with our online course, designed to teach you the fundamentals of NoSQL databases. You'll learn how to model, query, and manage data using MongoDB, exploring topics like document structures, collections, indexing, and aggregation. Through hands-on projects, you'll gain practical experience in building and managing scalable, high-performance databases for modern web applications.</p>
+                <div class="browse-course-container-img">
+                <img src="https://www.openlogic.com/sites/default/files/image/2019-07/image-blog-big-data-on-demand-with-mongodb.jpg" height="250px" width="450px">
+                <div class="details-love" onclick="addinglove(event)">
+                    <span>Add to favourite &nbsp;<label class="heart">&#10084;</label>
+            </div>
+                <span>Purchase</span>
+            </div>
+            </div>
+        </div>
+        <div class="browse-course-details" style="display: none;">
+            <div class="browse-course-container">
+                <h2>Hadoop</h2>
+                <p>Learn Hadoop with our online course and dive into the world of big data processing. This course covers the fundamentals of the Hadoop ecosystem, including HDFS, MapReduce, YARN, and Hive, helping you understand how to store, process, and analyze massive datasets. Through real-world examples and hands-on projects, you'll gain the skills needed to work with distributed data and develop scalable solutions.</p>
+                <div class="browse-course-container-img">
+                <img src="https://datainnovation.org/wp-content/uploads/2013/08/hadoopelephant_rgb.png" height="250px" width="450px">
+                <div class="details-love" onclick="addinglove(event)">
+                    <span>Add to favourite &nbsp;<label class="heart">&#10084;</label>
+            </div>
+                <span>Purchase</span>
+            </div>
+            </div>
+            <div class="browse-course-container">
+                <h2>Data Engineering</h2>
+                <p>Master data engineering with our online course, designed to teach you how to build, manage, and optimize data pipelines for large-scale data processing. You'll learn key concepts such as ETL (Extract, Transform, Load), data warehousing, cloud computing, and tools like Apache Hadoop, Spark, and SQL. Through hands-on projects, you'll gain practical experience in designing data architectures and handling real-time data.</p>
+                <div class="browse-course-container-img">
+                <img src="https://daxg39y63pxwu.cloudfront.net/images/blog/what-is-data-engineering/What_is_Data_Engineering.png" height="250px" width="450px">
+                <div class="details-love" onclick="addinglove(event)">
+                    <span>Add to favourite &nbsp;<label class="heart">&#10084;</label>
+            </div>
+                <span>Purchase</span>
+            </div>
+            </div>
+            <div class="browse-course-container">
+                <h2>Network Analysis</h2>
+                <p>Learn Network Analysis with our online course, where you'll explore the study of complex networks, including social, communication, and computer networks. You'll dive into key concepts like graph theory, network structure, centrality, and network dynamics. Through hands-on projects and case studies, you'll gain the skills to analyze and visualize networks, uncover patterns, and apply these insights to real-world scenarios.</p>
+                <div class="browse-course-container-img">
+                <img src="https://i.ytimg.com/vi/GbqoSXVqrxE/maxresdefault.jpg" height="250px" width="450px">
+                <div class="details-love" onclick="addinglove(event)">
+                    <span>Add to favourite &nbsp;<label class="heart">&#10084;</label>
+            </div>
+                <span>Purchase</span>
+            </div>
+            </div>
+        </div>
+        <div class="browse-course-details" style="display: none;">
+            <div class="browse-course-container">
+                <h2>Unity</h2>
+                <p>Master Unity with our online course, designed for aspiring game developers and creatives. This course covers the fundamentals of game development, including 2D and 3D design, physics, animation, and scripting with C#. Through hands-on projects, you'll learn how to create interactive games and immersive experiences while exploring best practices in game design and development.</p>
+                <div class="browse-course-container-img">
+                <img src="https://wallpapercave.com/wp/wp12540571.jpg" height="250px" width="450px">
+                <div class="details-love" onclick="addinglove(event)">
+                    <span>Add to favourite &nbsp;<label class="heart">&#10084;</label>
+            </div>
+                <span>Purchase</span>
+            </div>
+            </div>
+            <div class="browse-course-container">
+                <h2>Game Development</h2>
+                <p>Explore the exciting world of game development with our online course, designed for beginners and aspiring developers. You'll learn key concepts such as game design principles, programming, graphics, and sound integration. Through hands-on projects, you'll create your own games using popular tools and engines, gaining practical experience in storytelling, character development, and gameplay mechanics.</p>
+                <div class="browse-course-container-img">
+                <img src="https://cdn.prod.website-files.com/5b651f8b5fc94c4e27470a81/622227fd2ce3cc0455a88166_blog-gamedev-fullsize.png" height="250px" width="450px">
+                <div class="details-love" onclick="addinglove(event)">
+                    <span>Add to favourite &nbsp;<label class="heart">&#10084;</label>
+            </div>
+                <span>Purchase</span>
+            </div>
+            </div>
+            <div class="browse-course-container">
+                <h2>OpenGL</h2>
+                <p>Master OpenGL with our online course, designed for developers eager to create stunning graphics and interactive applications. This course covers the fundamentals of 2D and 3D graphics programming, including rendering techniques, shaders, transformations, and lighting. Through hands-on projects, you'll gain practical experience in building visual applications and games using OpenGL.</p>
+                <div class="browse-course-container-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXmjbS28QY1jm1UxLBr3TtXCJqqRz9-9cRXQ&s" height="250px" width="450px">
+                <div class="details-love" onclick="addinglove(event)">
+                    <span>Add to favourite &nbsp;<label class="heart">&#10084;</label>
+            </div>
+                <span>Purchase</span>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="blur-overlay"></div>
+    <div class="shopping-cart">
+        <div class="shopping-cart-nav">
+            <span class="shopping-cart-icon"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#FFF"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>&nbsp;Shopping Cart</span>
+            <span class="shopping-cart-close"><a href="#" onclick="closeView(); return false;"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></span>
+        </div>
+        <table>
+            <thead>
+                <tr class="shopping-cart-title">
+                    <th class="shopping-cart-title-product">Product Detail</th>
+                    <th class="shopping-cart-title-course">Course</th>
+                    <th class="shopping-cart-title-category">Category</th>
+                    <th class="shopping-cart-title-quantity">Quantity</th>
+                    <th class="shopping-cart-title-price">Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="shopping-cart-product">
+                    <td>
+                        <img src="https://media.licdn.com/dms/image/D4E12AQHfSWXTymm4VA/article-cover_image-shrink_600_2000/0/1695299723277?e=2147483647&v=beta&t=k0oOD_n5zjaGevp72SKt4vFaW7DvHtrwbdIyb2eP0GA" width="220px" height="150px">
+                    </td>
+                    <td>
+                        <div class="shopping-cart-product-content">
+                            <h4>Completed HTML&CSS</h4>
+                            <p>Learn HTML and CSS with our beginner-friendly course, featuring interactive lessons and hands-on projects to help you build responsive, modern websites.</p>
+                        </div>
+                    </td>
+                    <td><h3>Frontend Learning</h3></td>
+                    <td><input type="number"></td>
+                    <td><h3>RM22.99</h3></td>
+                </tr>
+                <tr class="shopping-cart-product">
+                    <td>
+                        <img src="https://chisellabs.com/glossary/wp-content/uploads/2021/06/What-is-an-API.png" width="220px" height="150px">
+                        </td>
+                        <td>
+                        <div class="shopping-cart-product-content">
+                            <h4>API</h4>
+                            <p>Explore APIs with our course, teaching you to integrate external data, master RESTful APIs, HTTP methods, and authentication, through hands-on projects for backend and full-stack development.</p>
+                        </div>
+                    </td>
+                    <td><h3>Backend Learning</h3></td>
+                    <td><input type="number"></td>
+                    <td><h3>RM18.99</h3></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="shopping-cart-checkout">
+            <span>Checkout</span>
+        </div>
+    </div>
+    <script src="odemyJas.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --accent-color: #9F14D7;
+    --base-color: #ffffffde;
+    --text-color: #2e2b41;
+    --input-color: #F3F0FF;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: Poppins, 'Segoe UI', sans-serif;
+    font-size: 12pt;
+    color: var(--text-color);
+    text-align: center;
+}
+body{
+    min-height: 100vh;
+    background-color: #9F14D7;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%239F14D7' width='11' height='11'/%3E%3Crect fill='%239e14d6' x='10' width='11' height='11'/%3E%3Crect fill='%239d14d5' y='10' width='11' height='11'/%3E%3Crect fill='%239c14d3' x='20' width='11' height='11'/%3E%3Crect fill='%239b14d2' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%239a14d1' y='20' width='11' height='11'/%3E%3Crect fill='%239914d0' x='30' width='11' height='11'/%3E%3Crect fill='%239814cf' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%239715ce' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%239615cc' y='30' width='11' height='11'/%3E%3Crect fill='%239515cb' x='40' width='11' height='11'/%3E%3Crect fill='%239415ca' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%239315c9' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%239215c8' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%239115c7' y='40' width='11' height='11'/%3E%3Crect fill='%239015c5' x='50' width='11' height='11'/%3E%3Crect fill='%238f15c4' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%238e15c3' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%238d15c2' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%238c15c1' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%238b15c0' y='50' width='11' height='11'/%3E%3Crect fill='%238a15be' x='60' width='11' height='11'/%3E%3Crect fill='%238915bd' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%238815bc' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%238715bb' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%238615ba' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%238515b9' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%238515b8' x='70' width='11' height='11'/%3E%3Crect fill='%238415b6' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%238315b5' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%238215b4' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%238115b3' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%238015b2' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%237f15b1' x='80' width='11' height='11'/%3E%3Crect fill='%237e15af' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%237d15ae' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%237c15ad' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%237b14ac' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%237a14ab' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%237914aa' x='90' width='11' height='11'/%3E%3Crect fill='%237814a9' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%237714a7' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%237614a6' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%237614a5' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%237514a4' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%237414a3' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%237314a2' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%237214a1' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%2371149f' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%2370149e' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%236f149d' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%236e149c' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%236d149b' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%236c149a' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%236b1399' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%236b1398' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%236a1396' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23691395' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23681394' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23671393' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: cover;
+    background-position: right;
+    overflow: hidden;
+}
+.wrapper{
+    box-sizing: border-box;
+    background-color: var(--base-color);
+    height: 100vh;
+    width: max(40%, 600px);
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+form{
+    width: min(400px, 100%);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+form >div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+form label{
+    flex-shrink: 0;
+    height: 50px;
+    width: 50px;
+    background-color: var(--accent-color);
+    fill: var(--base-color);
+    color: var(--base-color);
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+form input{
+    box-sizing: border-box;
+    flex-grow: 1;
+    min-width: 0;
+    height: 50px;
+    padding: 1em;
+    font: inherit;
+    border-radius: 0 10px 10px 0;
+    border:2px solid var(--accent-color);
+    border-left: none;
+    background-color: var(--input-color);
+    transition: 150ms ease;
+}
+form input:hover{
+    border-color: var(--accent-color);
+}
+form input:focus{
+    outline: none;
+    border-color: var(--text-color);
+}
+div:has(input:focus) > label{
+    background-color: var(--text-color);
+}
+form input::placeholder{
+    color: var(--text-color);
+}
+form button{
+    margin-top: 10px;
+    border: none;
+    border-radius: 1000px;
+    padding: .85em 4em;
+    background-color: var(--accent-color);
+    color: var(--base-color);
+    font: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 150ms ease;
+}
+form button:hover{
+    background-color: var(--text-color);
+}
+form button:focus{
+    outline: none;
+    background-color: var(--text-color);
+}
+a{
+    text-decoration: none;
+    color: var(--accent-color);
+}
+a:hover{
+    text-decoration: underline;
+}
+@media(max-width: 1100px){
+    .wrapper{
+        width: min(600px, 100%);
+        border-radius: 0;
+    }
+}
+form div.incorrect label{
+    background-color: #f06272;
+}
+form div.incorrect input{
+    border-color: #f06272;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 0.5%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    background-color: #671393;
+    border-bottom-right-radius: 30px;
+    color: white;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+    transition: 300ms ease;
+}
+.home a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.home:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+.home:hover svg {
+    fill: black;
+}
+.home:hover a {
+    color: black;
+}
+#error-message{
+    color: #f06272
+}
